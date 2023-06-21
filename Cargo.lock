@@ -52,6 +52,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "making_own_future"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "mio"
 version = "0.8.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"

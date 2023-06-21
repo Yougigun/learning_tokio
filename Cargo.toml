@@ -1,4 +1,5 @@
 [workspace]
 members = [
     "using_like_goroutine",
+    "making_own_future",
 ]
