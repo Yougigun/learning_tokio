@@ -1,9 +1,9 @@
 [package]
-name = "making_own_future"
+name = "using_join_marco"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.28.2", features = ["full"] }

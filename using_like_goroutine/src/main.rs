@@ -1,4 +1,4 @@
-use std::{future::Future, pin::Pin, thread::JoinHandle};
+use std::{future::Future, pin::Pin};
 
 use tokio::{runtime::Runtime, task::JoinError};
 
@@ -11,7 +11,6 @@ fn main() {
     let task1 = rt.spawn(async {
         println!("this is task1");
     });
-
     let task2 = rt.spawn(async move {
         println!("this is task2");
     });

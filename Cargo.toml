@@ -2,4 +2,6 @@
 members = [
     "using_like_goroutine",
     "making_own_future",
+    "using_join_marco",
+    "timer_future",
 ]
