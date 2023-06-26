@@ -68,7 +68,9 @@ fn new_executor_and_spawner() -> (Executor, Spawner) {
 }
 
 impl Spawner {
-    fn spawn(&self, future: impl Future<Output = ()> + 'static + Send) {
+    fn spawn(&self, future: impl 
+        
+        Future<Output = ()> + 'static + Send) {
         let future = future.boxed();
         let task = Arc::new(Task {
             future: Mutex::new(Some(future)),
