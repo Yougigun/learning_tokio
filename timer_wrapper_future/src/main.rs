@@ -69,6 +69,7 @@ impl<Fut: Future> Future for TimedWrapper<Fut> {
     fn poll(self: Pin<&mut Self>, cx: &mut Context) -> Poll<Self::Output> {
         // This returns a type with all the same fields, with all the same types,
         // except that the fields defined with #[pin] will be pinned.
+        
         let this = self.project();
         // Call the inner poll, measuring how long it took.
         let start = this.start.get_or_insert_with(Instant::now);
@@ -86,16 +87,20 @@ impl<Fut: Future> Future for TimedWrapper<Fut> {
 
 #[test]
 fn test() {
-    #[derive(Copy, Clone)]
-    struct sr<'a> {
-        a: u32,
-        b: &'a u32,
-    }
-    let mut n = 1;
-    n = 3;
-    let s = sr { a: n, b: &n };
-    let b = s;
+    // struct sr<'a> {
+    //     a: u32,
+    //     b: &'a u32,
+    // }
+    // let mut n = 1;
+    // n = 3;
+    // let s = sr { a: n, b: &n };
+    // let b = s;
 
-    println!("{} {}", s.a, s.b);
-    println!("{} {}", b.a, b.b);
+    // println!("{} {}", s.a, s.b);
+    // println!("{} {}", b.a, b.b);
+
+    // #[derive(Clone)]
+    // struct bag{
+    //     a: i32,
+    // }
 }

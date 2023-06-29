@@ -1,0 +1,212 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'using_like_goroutine'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=using_like_goroutine",
+                    "--package=using_like_goroutine"
+                ],
+                "filter": {
+                    "name": "using_like_goroutine",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'using_like_goroutine'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=using_like_goroutine",
+                    "--package=using_like_goroutine"
+                ],
+                "filter": {
+                    "name": "using_like_goroutine",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'making_own_future'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=making_own_future",
+                    "--package=making_own_future"
+                ],
+                "filter": {
+                    "name": "making_own_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'making_own_future'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=making_own_future",
+                    "--package=making_own_future"
+                ],
+                "filter": {
+                    "name": "making_own_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'using_join_marco'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=using_join_marco",
+                    "--package=using_join_marco"
+                ],
+                "filter": {
+                    "name": "using_join_marco",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'using_join_marco'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=using_join_marco",
+                    "--package=using_join_marco"
+                ],
+                "filter": {
+                    "name": "using_join_marco",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'timer_future'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=timer_future"
+                ],
+                "filter": {
+                    "name": "timer_future",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'timer_future'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=timer_future",
+                    "--package=timer_future"
+                ],
+                "filter": {
+                    "name": "timer_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'timer_future'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=timer_future",
+                    "--package=timer_future"
+                ],
+                "filter": {
+                    "name": "timer_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'timer_wrapper_future'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=timer_wrapper_future",
+                    "--package=timer_wrapper_future"
+                ],
+                "filter": {
+                    "name": "timer_wrapper_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'timer_wrapper_future'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=timer_wrapper_future",
+                    "--package=timer_wrapper_future"
+                ],
+                "filter": {
+                    "name": "timer_wrapper_future",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

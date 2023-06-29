@@ -466,6 +466,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "my_own_future_and_executor"
+version = "0.1.0"
+dependencies = [
+ "futures",
+]
+
+[[package]]
 name = "native-tls"
 version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -854,13 +861,6 @@ dependencies = [
  "redox_syscall",
  "rustix",
  "windows-sys 0.48.0",
-]
-
-[[package]]
-name = "timer_future"
-version = "0.1.0"
-dependencies = [
- "futures",
 ]
 
 [[package]]

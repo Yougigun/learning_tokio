@@ -3,6 +3,6 @@ members = [
     "using_like_goroutine",
     "making_own_future",
     "using_join_marco",
-    "timer_future",
+    "my_own_future_and_executor",
     "timer_wrapper_future"
 ]

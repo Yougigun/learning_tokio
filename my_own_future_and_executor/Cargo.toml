@@ -1,5 +1,5 @@
 [package]
-name = "timer_future"
+name = "my_own_future_and_executor"
 version = "0.1.0"
 edition = "2021"
 
