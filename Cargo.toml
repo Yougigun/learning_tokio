@@ -4,5 +4,6 @@ members = [
     "making_own_future",
     "using_join_marco",
     "my_own_future_and_executor",
-    "timer_wrapper_future"
+    "timer_wrapper_future",
+    "learning_pin"
 ]

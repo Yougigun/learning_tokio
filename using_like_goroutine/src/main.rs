@@ -1,3 +1,4 @@
+#![allow(warnings)]
 use std::{future::Future, pin::Pin};
 
 use tokio::{runtime::Runtime, task::JoinError};
