@@ -5,5 +5,6 @@ members = [
     "using_join_marco",
     "my_own_future_and_executor",
     "timer_wrapper_future",
-    "learning_pin"
+    "learning_pin",
+    "my-redis",
 ]
