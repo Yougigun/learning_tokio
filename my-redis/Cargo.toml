@@ -15,3 +15,7 @@ name = "hello-redis"
 path = "examples/hello-redis.rs"
 
 
+# specify the library info
+[lib]
+name = "lib"
+path = "src/lib.rs"
